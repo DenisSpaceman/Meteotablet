@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Meteotablet2</string>
+    <string name="app_name">Метеопланшет</string>
     <string name="unknown_error_message">Unknown error</string>
     <string name="remote_error_message">Connection problems</string>
     <string name="network_error_message">Problems with network</string>

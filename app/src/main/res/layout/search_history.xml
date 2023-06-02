@@ -11,47 +11,37 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.gridlayout.widget.GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="5dp"
-            android:background="@color/background"
-            app:columnCount="1"
-            app:rowCount="2">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="11dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp"
-                app:layout_column="0"
-                app:layout_columnWeight="1"
-                app:layout_gravity="fill"
-                app:layout_row="0"
-                app:layout_rowWeight="1"/>
-
-        </androidx.gridlayout.widget.GridLayout>
-
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_marginBottom="125dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"/>
 
-            <ImageView
-                android:id="@+id/home_button_search"
-                android:layout_width="54dp"
-                android:layout_height="54dp"
-                app:srcCompat="@drawable/home"
-                android:layout_gravity="bottom"
-                android:layout_margin="30dp"/>
-        </LinearLayout>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home_button_search"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/remove_data_button"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            app:srcCompat="@drawable/new_file" />
     </LinearLayout>
 
 </RelativeLayout>
